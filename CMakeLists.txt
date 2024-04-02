@@ -5,5 +5,5 @@ project(Transformer)
 
 add_executable(transformer main.cpp)
 
-find_package(Eigen3 REQUIRED)
+find_package(Eigen3 3.4 REQUIRED NO_MODULE)
 target_include_directories(transformer PRIVATE ${EIGEN3_INCLUDE_DIRS})
